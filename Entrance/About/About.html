@@ -22,7 +22,7 @@
     </head>
     <body background="DM4OdaYVoAAHH8q.jpg">           
         <div>
-        <header>
+        <header class ="header" id="myHeader"> 
             Links:<a href="../index.html">home</a> <a href="../Portfolio/Portfolio.html">portfolio</a>
         </header>
         </div>
@@ -33,10 +33,26 @@
             I come from a small village, it is far back in the woods.</br>
             There are few people there, but we all know eachother.</br>
             I like playing and making games.</br>
-            I don't take things seriously as a self-defense mechanism
+            I don't take things seriously </br>
+            My favorite color is gray</br>
         </p>
         <div class ="footer">
             <p>Woah! you found me, the footer. I am fourtunate to have a skilled reader like you look upon me</p>
         </div>
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("myHeader");
+                
+                var sticky = header.offsetTop;
+                
+                 function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+                </script>
     </body>
 </html>

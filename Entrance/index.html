@@ -22,11 +22,9 @@
         
     </head>
     <body>
-        <div>
-        <header>
+        <div  class ="header" id="myHeader">    
             Links:<a href = "../Entrance/About/About.html">about</a>
             <a href = "../Entrance/Portfolio/Portfolio.html">portfolio</a>
-        </header>
         </div>
         <div>
         <h1>Catherine Stafford</h1>
@@ -37,7 +35,7 @@
         </div>
         <div>
         <h2>I have a cat</h2>
-        <p>She is beautiful, has stripes and is the type of cat to hide all day. She is shy in all of the good
+        <p>they are beautiful, have stripes and is the type of cat to hide all day. They are shy in all of the good
             ways.</p>           
         </div>
         </p>
@@ -51,6 +49,21 @@
         <div class ="footer">
             <p>Woah! you found me, the footer. I am fourtunate to have a skilled reader like you look upon me</p>
         </div>
+        <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+
+var sticky = header.offsetTop;
+
+ function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
     </body>
 
 </html>
